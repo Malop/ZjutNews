@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg" >
+
+    <include
+        android:id="@+id/item_header"
+        layout="@layout/item_header" />
+
+    <Gallery
+        android:id="@+id/gallery1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:spacing="20dip" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpagerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.01" >
+    </android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/short_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="58px"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/top_back_image" >
+
+        <TextView
+            android:id="@+id/news1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="8dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/news1" />
+
+        <TextView
+            android:id="@+id/news2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/news2" />
+
+        <TextView
+            android:id="@+id/news3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/news3" />
+    </LinearLayout>
+
+</LinearLayout>
